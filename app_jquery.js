@@ -98,6 +98,27 @@ $(document).ready(function(){
          }  
         }); 
     });
+    
+ // CodeAcademy has slightly similiar approach with mouseenter and mouseleave events 
+ $(document).ready(function(){
+    $('div').mouseenter(function(){
+        $('div').fadeTo('fast', 1);
+    });
+   $('div').mouseleave(function(){
+        $('div').fadeTo('fast', 0.5);
+    });
+});
+// its CSS
+ div {
+    height: 60px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: #69D2E7;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: Verdana, Arial, Sans-Serif;
+    opacity: 0.5;
+}
 
 //*/**//**//**//**//**//**//**//**//**  .slide() Methods //**//**//**//**//**//**//**//**//**//**//**//**
 	
